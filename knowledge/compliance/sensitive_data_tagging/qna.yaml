@@ -1,0 +1,519 @@
+version: 1
+domain: sensitive_data_classification
+created_by: nishithsharma9
+seed_examples:
+  seed_examples:
+    - context: |
+        **Sensitive Data** refers to information that, if disclosed, could lead to financial loss, identity theft, or damage to client trust. This includes Personally Identifiable Information (PII) and financial data. Such data carries a high risk level, potentially resulting in financial, legal, or reputational damage if exposed. Therefore, it necessitates strict access control and encryption measures.
+      questions_and_answers:
+        - question: |
+            What is the sensitivity classification of "Coapplicant Name"?
+          answer: |
+            Coapplicant Name is classified as restricted PII due to its similarity to the applicant’s name, necessitating strict protection to prevent misuse.
+        - question: |
+            Why is "Applicant Social Security Number" considered highly sensitive?
+          answer: |
+            Applicant Social Security Number is highly sensitive PII, carrying significant legal and identity theft implications, thus requiring stringent protection.
+
+        - question: |
+            What level of protection does "Coapplicant Social Security Number" require?
+          answer: |
+            Coapplicant Social Security Number is highly sensitive PII, protected by regulatory requirements due to the high risk associated with unauthorized access.
+
+        - question: |
+            What is the sensitivity level of "CreditScr"?
+          answer: |
+            CreditScr, or credit score, is highly sensitive PII because it reflects an individual’s financial reliability and risk level, necessitating strong protection.
+
+        - question: |
+            Why is "BrrwrNm" (Borrower’s Name) classified as sensitive?
+          answer: |
+            BrrwrNm, representing the borrower’s name, is sensitive PII that requires secure handling to protect individual identity.
+
+        - question: |
+            What is the sensitivity classification of "CardNum" (Credit Card Number)?
+          answer: |
+            CardNum is classified as restricted sensitive financial data, subject to PCI-DSS regulations, necessitating robust protection to prevent fraud.
+
+        - question: |
+            What level of confidentiality is required for "Property Address"?
+          answer: |
+            Property Address is highly sensitive as it reveals the specific location of a financed asset, requiring strict protection to uphold customer privacy and security.
+
+        - question: |
+            How sensitive is the data for "Coapplicant Address"?
+          answer: |
+            Coapplicant Address is classified as highly sensitive PII that must be carefully controlled to safeguard coapplicant privacy.
+
+        - question: |
+            What are the security requirements for "cardnumber"?
+          answer: |
+            "cardnumber" is highly sensitive information; exposure could lead to fraud or financial loss, thus necessitating rigorous security measures.
+
+        - question: |
+            Why is "CreditScr" considered highly sensitive?
+          answer: |
+            CreditScr, or credit score, is highly sensitive PII because it reflects an individual’s financial reliability and risk level, necessitating strong protection.
+
+        - question: |
+            How critical is it to protect "Property Address"?
+          answer: |
+            Property Address is highly sensitive as it reveals the specific location of a financed asset, requiring strict protection to uphold customer privacy and security.
+
+        - question: |
+            Why does "Coapplicant Social Security Number" require strong protection?
+          answer: |
+            Coapplicant Social Security Number is highly sensitive PII, protected by regulatory requirements due to the high risk associated with unauthorized access.
+
+        - question: |
+            What type of data sensitivity applies to "BrrwrNm"?
+          answer: |
+            BrrwrNm, representing the borrower’s name, is sensitive PII that requires secure handling to protect individual identity.
+
+    - context: |
+        **Confidential Data** refers to information that requires robust security measures due to regulatory or reputational risks. This data is moderately sensitive and could harm the organization if disclosed, necessitating controlled access and encryption. Examples include:
+        - Employee Payroll Records: Private financial details, accessible only by HR and finance.
+        - Internal Financial Statements (Pre-Release): Financial data for internal planning.
+        - Customer Feedback (Non-identifiable): Feedback with operational insights, accessible internally.
+        - Non-public Marketing Strategies: Competitive marketing plans not yet public.
+        - Vendor Contracts: Business terms and conditions for internal access.
+        - Internal Audit Reports: Evaluations of procedures and finances.
+        - Product Development Plans: Strategy details for upcoming products.
+        - Employee Performance Reviews: Sensitive assessments, limited to HR and managers.
+        - Company Restructuring Plans: Planned organizational changes.
+        - Customer Service Guidelines: Operational guidelines for customer interactions.
+      questions_and_answers:
+        - question: |
+            What is the sensitivity classification of "FirstPayDt"?
+          answer: |
+            FirstPayDt is classified as confidential because it provides insights into loan initiation without exposing financial risk, warranting moderate protection.
+
+        - question: |
+            Why is "availablecredit" considered confidential?
+          answer: |
+            availablecredit is classified as confidential, as it indicates available funds that require limited access due to financial sensitivity.
+
+        - question: |
+            What level of confidentiality is required for "creditcardinsuranceclaimstatus"?
+          answer: |
+            creditcardinsuranceclaimstatus contains moderately sensitive claims details that require protection from unauthorized access.
+
+        - question: |
+            What is the sensitivity classification of "SecEndpts"?
+          answer: |
+            SecEndpts, or secondary endpoints, is classified as confidential due to its potential impact on competitive positioning, necessitating secure handling.
+
+        - question: |
+            How sensitive is "CntrsInv"?
+          answer: |
+            CntrsInv contains details on contracted investigators, considered confidential to protect professional relationships and proprietary insights.
+
+        - question: |
+            What is the security classification of "Loan Origination Date"?
+          answer: |
+            Loan Origination Date is classified as confidential because it pertains to internal processing data that should remain private to prevent competitive advantage disclosure.
+
+        - question: |
+            Why should "RegApprov" be protected?
+          answer: |
+            RegApprov, or regulatory approval status, is confidential as it must remain internal until publicly disclosed to prevent premature exposure.
+
+        - question: |
+            What security measures apply to "transactionapprovalcode"?
+          answer: |
+            transactionapprovalcode requires confidentiality as it contains transaction-specific information important for customer privacy.
+
+        - question: |
+            What is the sensitivity classification of "Property City"?
+          answer: |
+            Property City is moderately sensitive, useful for internal analysis but with some privacy risks, thus requiring confidential handling.
+
+        - question: |
+            How sensitive is "Coapplicant Gender"?
+          answer: |
+            Coapplicant Gender is moderately sensitive, intended for internal purposes, and should be kept confidential.
+
+        - question: |
+            Why is "transacamount" classified as confidential?
+          answer: |
+            transacamount is confidential because it reveals spending details, sensitive in terms of financial privacy.
+
+        - question: |
+            What is the security classification of "OnlineTransFlg"?
+          answer: |
+            OnlineTransFlg flags online transactions and could reveal transaction methods, thus necessitating secure handling for confidentiality.
+
+        - question: |
+            What level of security is required for "NumSites"?
+          answer: |
+            NumSites, representing the number of sites in a trial, is classified as confidential as it could reveal competitive strategy, necessitating restricted access.
+
+        - question: |
+            Why is "EstEndDt" considered confidential?
+          answer: |
+            EstEndDt, or estimated end date, is classified as confidential as it could affect external perceptions if released, meant only for internal planning.
+
+        - question: |
+            What is the sensitivity classification of "LnStat"?
+          answer: |
+            LnStat, representing loan status (e.g., active, closed), is moderately sensitive and reveals loan progress, requiring confidentiality.
+
+        - question: |
+            How sensitive is "Loan Maturity Date"?
+          answer: |
+            Loan Maturity Date is moderately sensitive, indicating loan duration, and is relevant only to internal operations.
+
+        - question: |
+            What is the security requirement for "transacdate"?
+          answer: |
+            transacdate contains financial transaction data, essential for customer privacy and security, thus requiring confidential handling.
+
+        - question: |
+            Why is "SvcProvider" classified as confidential?
+          answer: |
+            SvcProvider, or service provider information, has minimal sensitivity but is operational, requiring controlled internal access.
+
+        - question: |
+            What confidentiality level applies to "creditlimitincreasestatus"?
+          answer: |
+            creditlimitincreasestatus reveals internal approval decisions and is moderately sensitive to unauthorized access.
+
+        - question: |
+            What is the security classification of "transactionmerchant"?
+          answer: |
+            transactionmerchant could reveal spending habits and patterns, making it moderately sensitive and thus confidential.
+
+        - question: |
+            Why is "Loan Servicing Status" considered confidential?
+          answer: |
+            Loan Servicing Status contains information on loan service quality or status, and should remain internal to prevent privacy risks.
+
+        - question: |
+            What is the sensitivity level of "Loan Purpose"?
+          answer: |
+            Loan Purpose reveals internal loan intent, useful for analysis but needing protection to avoid exposure of financial needs.
+
+        - question: |
+            How sensitive is "crditlimit"?
+          answer: |
+            crditlimit is confidential financial data that must be protected to avoid unauthorized disclosure.
+
+        - question: |
+            Why is "Loan Approval Status" considered confidential?
+          answer: |
+            Loan Approval Status reflects a customer’s financial approval status and should be safeguarded to avoid misuse.
+
+        - question: |
+            What is the sensitivity classification of "PurchType"?
+          answer: |
+            PurchType, or purchase type, could reveal customer preferences, valuable for analytics but sensitive, thus classified as confidential.
+
+        - question: |
+            Why should "ZIP" be protected?
+          answer: |
+            ZIP code could lead to location identification, especially when combined with other data, thus requiring confidential handling.
+
+        - question: |
+            What level of security applies to "PrimLoc"?
+          answer: |
+            PrimLoc, or primary location of the trial, could pose security and logistical risks if disclosed, restricted to internal teams.
+
+        - question: |
+            Why is "ReliefRefiFlg" classified as confidential?
+          answer: |
+            ReliefRefiFlg indicates refinance needs due to relief, moderately sensitive but not personally identifiable, requiring controlled access.
+
+        - question: |
+            How sensitive is "Loan Disbursement Date"?
+          answer: |
+            Loan Disbursement Date is relevant for internal tracking and is moderately sensitive due to financial implications.
+
+        - question: |
+            What is the security classification of "Loan Prepayment Penalty"?
+          answer: |
+            Loan Prepayment Penalty pertains to financial strategy and is moderately sensitive, requiring confidential handling.
+
+        - question: |
+            Why is "BankID" considered confidential?
+          answer: |
+            BankID, as a bank identifier, could reveal customer banking relationships, thus requiring moderate protection.
+
+        - question: |
+            What confidentiality level applies to "creditreportdate"?
+          answer: |
+            creditreportdate is related to personal financial assessments, which require moderate security to protect customer privacy.
+
+        - question: |
+            What is the security requirement for "paymentdate"?
+          answer: |
+            paymentdate is tied to financial transactions and privacy concerns, necessitating limited access to maintain confidentiality.
+  
+    - context: |
+        **Sensitive Data** refers to information that requires strong access control measures due to potential financial, reputational, or regulatory risks. This data has a high-risk level that could result in financial, legal, or reputational damage if exposed, necessitating strict access control and encryption both in transit and at rest. Examples include:
+        - Customer Account Information (non-PII): Non-identifiable transaction histories accessible only by authorized personnel.
+        - Employee Personal Information (e.g., addresses): Sensitive personal details that must be protected from broad access.
+        - Detailed Financial Forecasts: Projections that could impact market perception if leaked.
+        - Customer Transaction Data: Highly sensitive non-identifiable transaction data.
+        - Legal Contracts with Confidential Clauses: Agreements requiring secure access controls.
+        - Customer Email and Contact Information: Could be misused if disclosed, limited to customer support teams.
+        - Internal Strategy Documents: Confidential planning documents detailing company strategies.
+        - Supplier Pricing Agreements: Pricing details that could impact competitiveness if exposed.
+        - Confidential Correspondence: Business-sensitive information in emails or documents.
+        - Employee Health Records: Protected health information, accessible only to authorized HR personnel.
+      questions_and_answers:
+        - question: |
+            What is the sensitivity classification of "PMI"?
+          answer: |
+            PMI, or private mortgage insurance details, is classified as sensitive as it relates to financial and risk assessments, requiring strong protection.
+
+        - question: |
+            Why is "PropAddr" considered sensitive data?
+          answer: |
+            PropAddr, or property address, is sensitive as it could reveal personal or sensitive details about the borrower, necessitating secure access control.
+
+        - question: |
+            How should "EscrowAmt" be handled in terms of data security?
+          answer: |
+            EscrowAmt is sensitive financial data related to the borrower’s payment responsibilities, requiring controlled access to maintain confidentiality.
+
+        - question: |
+            What is the sensitivity classification of "creditscore"?
+          answer: |
+            creditscore is highly sensitive as it represents a personal financial metric, requiring restricted access and high protection to maintain privacy.
+
+        - question: |
+            Why does "billingaddress" need high protection?
+          answer: |
+            billingaddress contains the customer’s address, classified as sensitive PII, requiring protection against unauthorized access.
+
+        - question: |
+            What level of sensitivity applies to "Property Value"?
+          answer: |
+            Property Value is sensitive financial data related to an asset, requiring protection due to privacy and competitive considerations.
+
+        - question: |
+            What is the security classification of "Loan Outstanding Balance"?
+          answer: |
+            Loan Outstanding Balance is sensitive as it represents a financial detail specific to each loan, needing protection to maintain customer privacy.
+
+        - question: |
+            Why is "lostorstolencard" classified as sensitive?
+          answer: |
+            lostorstolencard indicates a security issue related to a lost or stolen card, requiring high protection to prevent fraud.
+
+        - question: |
+            How should "crditutilization" be handled in terms of confidentiality?
+          answer: |
+            crditutilization, a sensitive financial detail, reveals customer spending patterns and is classified as confidential to avoid unauthorized access.
+
+        - question: |
+            What is the sensitivity classification of "creditcardclosuredate"?
+          answer: |
+            creditcardclosuredate, or the account closure date, is moderately sensitive as it relates to privacy and should be handled with confidential care.
+
+    - context: |
+        **Internal Data** refers to information restricted to employees but not highly sensitive. This data is intended solely for internal use within the organization, with minimal security requirements. Examples include:
+        - Internal Policy Documents: Outlines policies for employees only; should not be shared publicly.
+        - Employee Directory: Internal contact information, accessible only by staff.
+        - Internal Meeting Agendas: Schedules and topics for internal use, not suitable for external parties.
+        - Operational Procedures: Standard operating procedures, useful internally but posing minimal risk if exposed.
+        - Intranet Announcements: Information shared across the organization for operational purposes.
+        - Company Newsletters: Contains internal updates and events, intended for employees.
+        - Office Layout Plans: Used for internal logistics, not necessary to share externally.
+        - Internal Training Schedules: Details training sessions for staff; no sensitive information included.
+        - IT Support Documentation: Guides for internal system usage; should remain within the organization.
+        - Employee Benefits Information: General benefits overview for employees, not for public distribution.
+      questions_and_answers:
+        - question: |
+            What is the sensitivity classification of "OccType"?
+          answer: |
+            OccType, or occupancy type (e.g., primary residence), is classified as internal. It has minimal sensitivity and is intended only for internal reference.
+
+        - question: |
+            Why is "rewardpointsexpirationpolicy" classified as internal data?
+          answer: |
+            rewardpointsexpirationpolicy is an internal policy with no sensitive details, carrying low risk even if shared externally.
+
+        - question: |
+            What level of security is required for "Rewards"?
+          answer: |
+            Rewards information on points is generally low-risk, intended for internal use, and has minimal sensitivity.
+
+        - question: |
+            What is the security classification of "Suppl"?
+          answer: |
+            Suppl, representing the supplier name, is classified as internal. It is not highly sensitive but is limited to internal organizational use.
+
+        - question: |
+            Why is "Color" considered public data?
+          answer: |
+            Color information is a basic product detail and is not sensitive, thus considered public information.
+
+        - question: |
+            What is the sensitivity classification of "foreigntransactionfee"?
+          answer: |
+            foreigntransactionfee is classified as internal. It provides general fee information with minimal sensitivity and security requirements.
+
+        - question: |
+            How sensitive is "Ctry"?
+          answer: |
+            Ctry, or country information, has low risk but is designated as internal data for organizational reference.
+
+        - question: |
+            What is the classification of "Curr" (Currency Type)?
+          answer: |
+            Curr, or currency type, is classified as internal as it holds minimal risk and is used only for internal reference.
+
+        - question: |
+            Why is "purchaseprotectionstatus" classified as internal?
+          answer: |
+            purchaseprotectionstatus is low-sensitivity information regarding purchase protection benefits, suitable for internal reference.
+
+        - question: |
+            What is the sensitivity classification of "transactioncategory"?
+          answer: |
+            transactioncategory provides a general categorization without identifying specific purchases, making it suitable as internal data.
+
+        - question: |
+            How sensitive is "LnTerm"?
+          answer: |
+            LnTerm, or loan term, is general product information with low sensitivity, classified as internal data for reference.
+
+        - question: |
+            What level of security is required for "Applicant State"?
+          answer: |
+            Applicant State is general geographic data relevant for internal reporting and has minimal sensitivity if disclosed.
+
+        - question: |
+            Why is "rewardpointsearned" classified as internal data?
+          answer: |
+            rewardpointsearned represents accumulated points, carrying low sensitivity and intended only for internal access.
+
+        - question: |
+            What is the classification of "StudyPop"?
+          answer: |
+            StudyPop, or study population description, is internal data. It has low sensitivity but should remain internal, especially if it includes demographics.
+
+        - question: |
+            How sensitive is "creditcarddesign"?
+          answer: |
+            creditcarddesign, or information about the card’s appearance, has minimal privacy risk, classified as internal data.
+
+        - question: |
+            What is the sensitivity classification of "StockLvl"?
+          answer: |
+            StockLvl, representing stock levels, is operational data with limited sensitivity, restricted for internal use only.
+
+    - context: |
+        **Public Data** refers to information intended for public release, requiring minimal protection. This data poses no risk if shared outside the organization and is accessible to all employees, partners, and the public. No specific security measures are required, but data accuracy and consistency should be ensured. Examples include:
+        - Press Releases: Intended for public distribution, containing non-sensitive information about the bank’s announcements.
+        - Marketing Brochures: Used to inform the public about products/services; no confidential information is included.
+        - Corporate Social Responsibility (CSR) Reports: Public documents highlighting social initiatives, posing no security risks.
+        - Annual Reports (Public Version): Contains general financial data shared with the public, omitting sensitive financial details.
+        - Job Postings: Advertisements for open positions, containing no sensitive information.
+        - Published Research Papers: Research shared for public knowledge, excluding proprietary or customer data.
+        - FAQs on Website: General information provided to assist customers, without any sensitive data.
+        - Branch Location and Contact Information: Publicly available to help customers locate branches.
+        - Basic Product Information: General details about products (e.g., checking accounts) safe for public access.
+        - CEOs Public Statements: Official statements intended for external audiences, containing no confidential information.
+      questions_and_answers:
+        - question: |
+            What is the sensitivity classification of "EligCrit"?
+          answer: |
+            EligCrit, or eligibility criteria, is classified as public. It informs potential participants and medical professionals and poses no security risk if shared.
+
+        - question: |
+            Why is "ModelNum" classified as public data?
+          answer: |
+            ModelNum, representing the model number, is product identification data and is non-sensitive, suitable for public release.
+
+        - question: |
+            What is the level of sensitivity for "Warr" (Warranty information)?
+          answer: |
+            Warr, or warranty information, is public and typically shared alongside the product for customer awareness.
+
+        - question: |
+            What is the security classification of "ProdName"?
+          answer: |
+            ProdName, or product name, is classified as public as it is non-sensitive and generally available information.
+
+        - question: |
+            Why is "Phase" considered public data?
+          answer: |
+            Phase, indicating the phase of a trial (e.g., Phase I, II, III), is public information often shared as part of trial registration.
+
+        - question: |
+            What is the sensitivity level of "COO"?
+          answer: |
+            COO, or country of origin, is classified as public, as it is non-sensitive and commonly available information.
+
+        - question: |
+            How sensitive is "DiscPrc"?
+          answer: |
+            DiscPrc, representing discounted price, is typically shared publicly for promotional purposes and carries no security risks.
+
+    - context: |
+        **Restricted Data** refers to highly sensitive information that could cause significant financial, legal, or reputational damage if disclosed. This data requires the highest level of security, including multi-factor authentication, strict access controls, data loss prevention monitoring, and full audit trails. External sharing of restricted data is prohibited without executive-level approval and is only permitted under secure, verifiable conditions (e.g., encrypted file transfer). Examples include:
+        - Customer PII (e.g., Social Security Numbers, ID Numbers): Strictly protected personally identifiable information.
+        - Credit Card and Payment Data: Sensitive financial data requiring strict regulatory compliance (e.g., PCI-DSS).
+        - Executive Meeting Minutes: Detailed information on high-level decisions, strictly limited to executives.
+        - Board Meeting Documents: Confidential documents with sensitive strategic information; strict access required.
+        - Mergers and Acquisitions Information: Details on potential M&A activities, restricted to top executives.
+        - Customer Loan Applications: Contains highly sensitive financial and personal details, requiring protected access.
+        - Encryption Keys: Keys to secure data, strictly controlled to prevent unauthorized access.
+        - Legal Investigations or Litigation Files: Sensitive legal documents accessible only to legal and executive teams.
+        - Proprietary Algorithms: Intellectual property requiring stringent protection against external access.
+        - Employee Background Checks: Confidential background information limited to HR and authorized security personnel.
+      questions_and_answers:
+        - question: |
+            What is the sensitivity classification of "Coapplicant Name"?
+          answer: |
+            Coapplicant Name is classified as restricted PII. It requires strict protection due to its sensitivity, as it is similar to applicant name and could lead to misuse if exposed.
+
+        - question: |
+            Why is "Applicant Social Security Number" considered highly restricted?
+          answer: |
+            Applicant Social Security Number is highly sensitive PII that requires stringent protection due to its legal implications and risk of identity theft.
+
+        - question: |
+            What level of security is required for "Coapplicant Social Security Number"?
+          answer: |
+            Coapplicant Social Security Number is classified as restricted, requiring protection per regulatory requirements due to its high risk of exposure.
+
+        - question: |
+            What is the sensitivity classification of "CreditScr"?
+          answer: |
+            CreditScr, or credit score, is highly sensitive PII indicating financial reliability and risk level, thus classified as restricted and requiring strong protection.
+
+        - question: |
+            Why is "BrrwrNm" (Borrower’s Name) classified as restricted data?
+          answer: |
+            BrrwrNm, or the borrower’s name, is personally identifiable information (PII) and is classified as restricted to protect individual identity.
+
+        - question: |
+            What is the security classification of "CardNum"?
+          answer: |
+            CardNum, or credit card number, is highly sensitive financial data subject to PCI-DSS regulations, requiring stringent security measures to prevent unauthorized access.
+
+        - question: |
+            How sensitive is "Property Address"?
+          answer: |
+            Property Address is highly sensitive as it reveals the specific location of a financed asset. It requires restricted classification to protect customer privacy and security.
+
+        - question: |
+            What level of protection does "Coapplicant Address" require?
+          answer: |
+            Coapplicant Address is detailed PII classified as restricted, requiring strict control measures to ensure the coapplicant’s privacy is maintained.
+
+        - question: |
+            Why is "cardnumber" classified as restricted?
+          answer: |
+            cardnumber is highly sensitive financial information. Exposure could lead to fraud or financial loss, necessitating the highest level of security and restricted classification.
+
+document_outline: |
+  This Sensitive Data Governance Document outlines procedures for classifying, handling, and protecting sensitive data to prevent unauthorized access and mitigate risks. It provides a comprehensive framework for categorizing data based on sensitivity levels, with specific tagging guidelines and security measures tailored to safeguard each classification level effectively. The document can be used as a reference for categorizing data into Public, Internal, Confidential, Sensitive, and Restricted levels, ensuring consistent application of access controls, encryption, and data handling practices across the organization.
+document:
+  repo: https://github.com/nishithsharma9/sensitive_data_classification
+  commit: 6a35ff6b58597cc2c46b4224a4de531d0dc46bb4
+  patterns:
+    - sensitivie_data_compliance.md
